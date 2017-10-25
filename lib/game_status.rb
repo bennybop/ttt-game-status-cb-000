@@ -41,3 +41,9 @@ end
 return winner
 
 end
+
+def full?
+  @board.all? do |row|
+    row.none?(&:nil?)
+  end
+end
