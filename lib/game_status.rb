@@ -47,3 +47,4 @@ def full?
     row.none?(&:nil?)
   end
 end
+end
