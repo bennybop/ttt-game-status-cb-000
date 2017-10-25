@@ -17,7 +17,5 @@ WIN_COMBINATIONS = [
 
 
 def won?(board)
-WIN_COMBINATIONS.detect do |win_combination|
-  [[?X], [?0]].include? win_combination.map(&board.method(:[])).uniq
-end
+winner = nil
 end
