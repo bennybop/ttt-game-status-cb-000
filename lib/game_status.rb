@@ -43,7 +43,7 @@ return winner
 end
 
 def full?(board)
-  if board.detect {|i| == || i == nil}
+  if board.detect {|i| i == " " || i == nil}
     return false
   else
     return true
