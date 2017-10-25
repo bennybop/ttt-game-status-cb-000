@@ -43,8 +43,9 @@ return winner
 end
 
 def full?
-  @board.all? do |row|
-    row.none?(&:nil?)
-  end
+  if board.detect {|i| == || i == nil}
+    return false
+  else
+    return true
 end
 end
